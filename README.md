@@ -20,4 +20,4 @@ We acknowledge Microsoft Azure Research grant MS-AZR-0036P, FAPESP grant 2012/13
 License
 ---
 
-Feel free to use this code for studying, applying to your own problems, or anything that complies with the *** license, available in the folder License. If you use this code, we kindly ask that you cite our paper [Brito et al](http://www.sciencedirect.com/science/article/pii/S1877050916306500), where both of these strategies were presented and studied. 
+Feel free to use this code for studying, applying to your own problems, or anything that complies with the MIT License (MIT), available in the folder License. If you use this code, we kindly ask that you cite our paper [Brito et al](http://www.sciencedirect.com/science/article/pii/S1877050916306500), where both of these strategies were presented and studied. 
