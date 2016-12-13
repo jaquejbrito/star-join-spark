@@ -1,3 +1,20 @@
+/**
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* Original source: https://github.com/MagnusS/Java-BloomFilter/blob/master/src/com/skjegstad/utils/BloomFilter.java */
+
 package spark.starjoin;
 
 import com.esotericsoftware.kryo.Kryo;
@@ -12,7 +29,21 @@ import java.util.Collection;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-
+/**
+ * Implementation of a Bloom-filter, as described here:
+ * http://en.wikipedia.org/wiki/Bloom_filter
+ *
+ * For updates and bugfixes, see http://github.com/magnuss/java-bloomfilter
+ *
+ * Inspired by the SimpleBloomFilter-class written by Ian Clarke. This
+ * implementation provides a more evenly distributed Hash-function by
+ * using a proper digest instead of the Java RNG. Many of the changes
+ * were proposed in comments in his blog:
+ * http://blog.locut.us/2008/01/12/a-decent-stand-alone-java-bloom-filter-implementation/
+ *
+ * @param <E> Object type that is to be inserted into the Bloom filter, e.g. String or Integer.
+ * @author Magnus Skjegstad <magnus@skjegstad.com>
+ */
 
 
 public class MyBloomFilter {
